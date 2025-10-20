@@ -10,8 +10,8 @@ const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
 });
 
-const CHANNEL_INFO = "1426881896293339187";
-const CHANNEL_PERM = "1426881903155347486";
+const CHANNEL_INFO = "1389759482686603294";
+const CHANNEL_PERM = "1389759482686603294";
 
 client.once("ready", () => {
   console.log(`✅ Logged in as ${client.user.tag}`);
