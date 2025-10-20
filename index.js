@@ -20,7 +20,7 @@ client.once("ready", () => {
 client.on("messageCreate", async (message) => {
   if (message.content === "!setupban" && message.member.permissions.has("Administrator")) {
     const embed = new EmbedBuilder()
-      .setAuthor({ name: "Triggers" })
+      .setAuthor({ name: "Attack fight" })
       .setDescription(
         "**📢 قسم الباندات الخاص بالسيرفر**\n\n" +
         "يمكنك استخدام الزر أدناه لإنشاء باند جديد.\n\n" +
@@ -48,7 +48,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
     const reasonInput = new TextInputBuilder().setCustomId("reason").setLabel("السبب").setStyle(TextInputStyle.Paragraph).setRequired(true);
     const durationInput = new TextInputBuilder().setCustomId("duration").setLabel("المدة").setStyle(TextInputStyle.Short).setRequired(true);
     const proofInput = new TextInputBuilder().setCustomId("proof").setLabel("رابط أو وصف الدليل").setStyle(TextInputStyle.Paragraph).setRequired(true);
-    const adminInput = new TextInputBuilder().setCustomId("admin").setLabel("اسم المشرف المنفذ").setStyle(TextInputStyle.Short).setRequired(true);
 
     modal.addComponents(
       new ActionRowBuilder().addComponents(idInput),
