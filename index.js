@@ -56,7 +56,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
       new ActionRowBuilder().addComponents(reasonInput),
       new ActionRowBuilder().addComponents(durationInput),
       new ActionRowBuilder().addComponents(proofInput),
-      new ActionRowBuilder().addComponents(adminInput)
     );
 
     await interaction.showModal(modal);
