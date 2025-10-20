@@ -69,7 +69,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
     const reason = interaction.fields.getTextInputValue("reason");
     const duration = interaction.fields.getTextInputValue("duration");
     const proof = interaction.fields.getTextInputValue("proof");
-    const admin = interaction.fields.getTextInputValue("admin");
 
     const infoChannel = await client.channels.fetch(CHANNEL_INFO);
     const permChannel = await client.channels.fetch(CHANNEL_PERM);
